@@ -21,5 +21,6 @@ from django.urls import path, include
 #  for loading the store by default when we run the code 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', lambda request: render(request, 'store/login.html'), name='login'),  # Default page
     path('', include('store.urls')),
 ]
