@@ -1,0 +1,411 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 16",
+        "category": "Electronics",
+        "price": 699,
+        "image": "https://mac-center.com.pr/cdn/shop/files/iPhone_16_Pro_Max_Desert_Titanium_PDP_Image_Position_1__en-US_bf24ca74-a053-42d3-80e2-3edc40e85c1e.jpg?v=1726226953",
+        "description": "iPhone 16"
+    },
+    {
+        "id": 14,
+        "name": "Oil",
+        "category": "Groceries",
+        "price": 15,
+        "image": "https://d3koznjjgilbyx.cloudfront.net/lowesfoods/product_images/0074164302005.jpg",
+        "description": "Oil"
+    },
+    {
+        "id": 7,
+        "name": "Black Cargo",
+        "category": "Clothing",
+        "price": 80,
+        "image": "https://beyondriders.com/cdn/shop/files/Men_s_Cargo_Pants_-_Relaxed_Fit_-_Solid_Black_-_Front_2048x.jpg?v=1695813145",
+        "description": "Black Cargo"
+    },
+    {
+        "id": 8,
+        "name": "Black T-Shirt",
+        "category": "Clothing",
+        "price": 30,
+        "image": "https://imgs.search.brave.com/fuHZic5lwDbkNrTJUwoNW5wM-lkmZJo4alQ6AQcPui4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcy/ODUwMDc4L3Bob3Rv/L2JsYWNrLXQtc2hp/cnQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVBSX0plbzZB/YmtLeWR0SUNKZ0R2/WXIyNmRtOUhmZ3FR/ZVRyOGxjcFRtU2c9",
+        "description": "Black T-Shirt"
+    },
+    {
+        "id": 9,
+        "name": "White T-Shirt",
+        "category": "Clothing",
+        "price": 20,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRhlMiirJpDvUiB8J1Q3vI87n-hVwSRvZyw&s",
+        "description": "White T-Shirt"
+    },
+    {
+        "id": 10,
+        "name": "White Hoodie",
+        "category": "Clothing",
+        "price": 70,
+        "image": "https://cdn.mainlinemenswear.co.uk/f_auto,q_auto/mainlinemenswear/shopimages/products/157851/Mainimage.jpg",
+        "description": "White Hoodie"
+    },
+    {
+        "id": 11,
+        "name": "Sugar",
+        "category": "Groceries",
+        "price": 12,
+        "image": "https://d3koznjjgilbyx.cloudfront.net/lowesfoods/product_images/0074164303726.jpg",
+        "description": "Sugar"
+    },
+    {
+        "id": 13,
+        "name": "Bread",
+        "category": "Groceries",
+        "price": 20,
+        "image": "https://imgs.search.brave.com/quluBADfyiS_roCcx5zAxtQv8PH5VTA-A8pS7njwEvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFNTWRYTFhZQUwu/anBn",
+        "description": "Bread"
+    },
+    {
+        "id": 25,
+        "name": "Silver Necklace",
+        "category": "Jewelry",
+        "price": 300,
+        "image": "https://images.gabrielny.com/assets/24-Inch-925-Sterling-Silver-Hollow-Men-s-Link-Chain-Necklace~NKM6767-24SVJJJ-1.jpg?w=600",
+        "description": "Silver Necklace"
+    },
+    {
+        "id": 15,
+        "name": "Rice",
+        "category": "Groceries",
+        "price": 25,
+        "image": "https://www.kesargrocery.com/images/P/LAXMI%20BROWN%20BASMATI%20RICE.jpg",
+        "description": "Rice"
+    },
+    {
+        "id": 16,
+        "name": "Bed Sheet",
+        "category": "Household",
+        "price": 25,
+        "image": "https://alaskankingbeds.com/cdn/shop/files/NAVY_SHEET_SET_PILLOW_STACK.jpg?v=1709154916&width=1080",
+        "description": "Bed Sheet"
+    },
+    {
+        "id": 29,
+        "name": "Anti-Dandruff Shampoo",
+        "category": "Paramacy",
+        "price": 70,
+        "image": "https://www.afriessence.nl/cdn/shop/files/2-in-1-Anti-Dandruff-Hydrating-Shampoo-Conditioner_6c28ee77-6686-4666-90b9-35d8eb9f4535.8ee0094e51b3c31879c1ab3f6b361c79.jpg?v=1730557153&width=1080",
+        "description": "Anti-Dandruff Shampoo"
+    },
+    {
+        "id": 18,
+        "name": "Blanket",
+        "category": "Household",
+        "price": 30,
+        "image": "https://barehome.com/cdn/shop/files/Black_MP_Blanket_NC_1.jpg?v=1732211289&width=1080",
+        "description": "Blanket"
+    },
+    {
+        "id": 39,
+        "name": "Lightroom",
+        "category": "Software",
+        "price": 90,
+        "image": "https://digitalproductkey.com/images/detailed/23/adobe-photoshop-lightroom-cc.jpg",
+        "description": "Lightroom"
+    },
+    {
+        "id": 17,
+        "name": "Pillow",
+        "category": "Household",
+        "price": 20,
+        "image": "https://www.bedbathandbeyond.co.nz/productimages/thumb/1/14905_32335_65749.jpg",
+        "description": "Pillow"
+    },
+    {
+        "id": 5,
+        "name": "Mac Mini",
+        "category": "Electronics",
+        "price": 2099,
+        "image": "https://ec.tiendasishop.com/wp-content/uploads/2024/02/mac-mini-202301-gallery-3.jpeg",
+        "description": "Mac Mini"
+    },
+    {
+        "id": 19,
+        "name": "Towel",
+        "category": "Household",
+        "price": 15,
+        "image": "https://m.media-amazon.com/images/I/81en3yalOyL.jpg",
+        "description": "Towel"
+    },
+    {
+        "id": 3,
+        "name": "iPad",
+        "category": "Electronics",
+        "price": 1500,
+        "image": "https://www.costco.co.uk/medias/sys_master/images/hd3/he7/122042574045214.jpg",
+        "description": "iPad"
+    },
+    {
+        "id": 20,
+        "name": "Candles",
+        "category": "Household",
+        "price": 20,
+        "image": "https://www.bathandbodyworks.ca/dw/image/v2/BGFZ_PRD/on/demandware.static/-/Sites-bbw_ca-storefront-catalog/default/dw1b49a0fe/hires/028008728.jpg?sw=1000&sh=1000&sm=fit",
+        "description": "Candles"
+    },
+    {
+        "id": 24,
+        "name": "Gold Ring",
+        "category": "Jewelry",
+        "price": 200,
+        "image": "https://etrnlrings.com/cdn/shop/files/3B_5000x.jpg?v=1695685767",
+        "description": "Gold Ring"
+    },
+    {
+        "id": 49,
+        "name": "Boltz",
+        "category": "Pet Food",
+        "price": 190,
+        "image": "https://m.media-amazon.com/images/I/61rwcUZwrzL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Boltz - Rabbit Food"
+    },
+    {
+        "id": 26,
+        "name": "Gold Necklace",
+        "category": "Jewelry",
+        "price": 400,
+        "image": "https://images.gabrielny.com/assets/Diamond-Cut---18-inch-14K-Yellow-Gold-Textured-Diamond-Medallion-Hollow-Chain-Necklace~NK6841-18Y45JJ-1.jpg?w=600",
+        "description": "Gold Necklace"
+    },
+    {
+        "id": 4,
+        "name": "iWatch",
+        "category": "Electronics",
+        "price": 599,
+        "image": "https://www.ione.com.kh/wp-content/uploads/2023/09/1-6.jpg",
+        "description": "iWatch"
+    },
+    {
+        "id": 35,
+        "name": "The Lean Startup",
+        "category": "Books",
+        "price": 50,
+        "image": "https://cdn.mall.adeptmind.ai/https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_c39da67b-b7ea-4306-8c12-d1962e705f91%3Fwid%3D1000%26hei%3D1000_large.webp",
+        "description": "The Lean Startup"
+    },
+    {
+        "id": 27,
+        "name": "Muscle Balm",
+        "category": "Paramacy",
+        "price": 50,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MW6211EVHb4j1JZPLyMsyun4KIpfy6LocA&s",
+        "description": "Muscle Balm"
+    },
+    {
+        "id": 42,
+        "name": "Microsoft Office",
+        "category": "Software",
+        "price": 120,
+        "image": "https://www.codesproduit.fr/wp-content/uploads/2024/10/office2024-pro.png",
+        "description": "Microsoft Office"
+    },
+    {
+        "id": 28,
+        "name": "Anti-Acne Cream",
+        "category": "Paramacy",
+        "price": 60,
+        "image": "https://tokecosmetics.com/wp-content/uploads/2024/07/anti-acne-face-cream.jpg",
+        "description": "Anti-Acne Cream"
+    },
+    {
+        "id": 44,
+        "name": "Dropbox",
+        "category": "Software",
+        "price": 140,
+        "image": "https://i.pcmag.com/imagery/reviews/01eqrJlwTzs4ACRmWo01fCt-45..v1668723864.jpg",
+        "description": "Dropbox"
+    },
+    {
+        "id": 30,
+        "name": "Anti-Dandruff Conditioner",
+        "category": "Paramacy",
+        "price": 80,
+        "image": "https://www.afriessence.nl/cdn/shop/files/f011e8a0-86a0-45ec-adf6-6923228c97b9.221654109105939199166cc5f955d67c.jpg?v=1730557787&width=1080",
+        "description": "Anti-Dandruff Conditioner"
+    },
+    {
+        "id": 25,
+        "name": "Silver Necklace",
+        "category": "Jewelry",
+        "price": 300,
+        "image": "https://images.gabrielny.com/assets/24-Inch-925-Sterling-Silver-Hollow-Men-s-Link-Chain-Necklace~NKM6767-24SVJJJ-1.jpg?w=600",
+        "description": "Silver Necklace"
+    },
+    {
+        "id": 31,
+        "name": "Rich Dad Poor Dad",
+        "category": "Books",
+        "price": 10,
+        "image": "https://images.squarespace-cdn.com/content/v1/6398d94cae7504477c095dde/1720293444408-C0Z3WKTKR1W5QMDX2Q98/Kiyosaki_Rich+Dad+Poor+Dad_3DP.png?format=2500w",
+        "description": "Rich Dad Poor Dad"
+    },
+    {
+        "id": 34,
+        "name": "The Subtle Art of Not Giving a F*ck",
+        "category": "Books",
+        "price": 40,
+        "image": "https://nollybook.com/cdn/shop/products/413R2vCAcLL_300x300.jpg?v=1658901632",
+        "description": "The Subtle Art of Not Giving a F*ck"
+    },
+    {
+        "id": 36,
+        "name": "Photoshop",
+        "category": "Software",
+        "price": 60,
+        "image": "https://www-konga-com-res.cloudinary.com/f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/K/O/229429_1710252960.jpg",
+        "description": "Photoshop"
+    },
+    {
+        "id": 38,
+        "name": "After Effects",
+        "category": "Software",
+        "price": 80,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWkhjQI9tK4Hvoe_d1qGrWSgTq-0Gas6QpoQ&s",
+        "description": "After Effects"
+    },
+    {
+        "id": 22,
+        "name": "Raspberry Pi",
+        "category": "Electronics",
+        "price": 1500,
+        "image": "https://www.inno-maker.com/wp-content/uploads/2019/06/Board_02.png",
+        "description": "Raspberry Pi 4"
+    },
+    {
+        "id": 2,
+        "name": "Macbook",
+        "category": "Electronics",
+        "price": 2500,
+        "image": "https://www.rit.edu/digitalden/sites/rit.edu.digitalden/files/2022-07/macbook-air-spacegray-gallery2-20220606.png",
+        "description": "Macbook"
+    },
+    {
+        "id": 40,
+        "name": "Illustrator",
+        "category": "Software",
+        "price": 100,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgKEDpK-x3HKGB57YsDHDNLYEZBJ5e9z0sw&s",
+        "description": "Illustrator"
+    },
+    {
+        "id": 46,
+        "name": "Whiskas",
+        "category": "Pet Food",
+        "price": 160,
+        "image": "https://i5.walmartimages.com/seo/Whiskas-Tuna-Bag-Wet-Food-85-gr_c26eba36-c60c-4e93-9bfe-96e30cf9816c.b6c7e29681557021909cd3c290f3e9f9.jpeg",
+        "description": "Whiskas Complete Nutrition Adult Dry Cat Food"
+    },
+    {
+        "id": 32,
+        "name": "The Alchemist",
+        "category": "Books",
+        "price": 20.19,
+        "image": "https://www.logobook.ru/make_nimage.php?uid=11033782",
+        "description": "The Alchemist"
+    },
+    {
+        "id": 21,
+        "name": "Arduino",
+        "category": "Electronics",
+        "price": 200,
+        "image": "https://store.arduino.cc/cdn/shop/files/ABX00087_00.front_1200x900.jpg?v=1727101606",
+        "description": "Arduino R4"
+    },
+    {
+        "id": 33,
+        "name": "The Power of Now",
+        "category": "Books",
+        "price": 8.50,
+        "image": "https://globalcontact.com.au/wp-content/uploads/2023/02/practicing-the-power-of-now-eckhat-tolle-520px.jpg",
+        "description": "The Power of Now"
+    },
+    {
+        "id": 41,
+        "name": "InDesign",
+        "category": "Software",
+        "price": 110,
+        "image": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzor0zzb23adc2",
+        "description": "InDesign"
+    },
+    {
+        "id": 43,
+        "name": "Google Drive",
+        "category": "Software",
+        "price": 130,
+        "image": "https://www.teqiq.com/files/2022/10/google-drive1.jpg",
+        "description": "Google Drive"
+    },
+    
+    {
+        "id": 23,
+        "name": "Silver Ring",
+        "category": "Jewelry",
+        "price": 399.85,
+        "image": "https://kellyherdjewelry.com/cdn/shop/products/WB121-SS_2400x.jpg?v=1651690674",
+        "description": "Silver Ring"
+    },
+    {
+        "id": 45,
+        "name": "Pedigree",
+        "category": "Pet Food",
+        "price": 50.75,
+        "image": "https://m.media-amazon.com/images/I/81eQ8UVFGoL.jpg",
+        "description": "Pedigree Complete Nutrition Adult Dry Dog Food"
+    },
+    {
+        "id": 37,
+        "name": "Premiere",
+        "category": "Software",
+        "price": 70,
+        "image": "https://www.josscreative.com/wp-content/uploads/2024/05/adobe-premier-pro-2024-pre-activated-1.jpg",
+        "description": "Premiere"
+    },
+    {
+        "id": 47,
+        "name": "Tetra - Pond Flakes",
+        "category": "Pet Food",
+        "price": 170,
+        "image": "https://www.aquatix-2u.co.uk/cdn/shop/products/8ce79ae7-be47-4c6b-9797-6dd517bd0eee.jpg?v=1686919914",
+        "description": "Tetra - Pond Flakes"
+    },
+    {
+        "id": 6,
+        "name": "Black Hoodie",
+        "category": "Clothing",
+        "price": 70,
+        "image": "https://sharecloth.com/image/cache/catalog/hoodies-sweatshirts/calvin-klein-black-hoodie-monogram-logo-hoodie-01-1024x1024.jpg",
+        "description": "Black Hoodie"
+    },
+    {
+        "id": 48,
+        "name": "Royal Canin",
+        "category": "Pet Food",
+        "price": 180,
+        "image": "https://petpantry.ca/cdn/shop/products/30172451.jpg?v=1600821829",
+        "description": "Royal Canin Complete Nutrition Adult Dry Dog Food"
+    },
+    {
+        "id": 50,
+        "name": "Higgins Sunburst",
+        "category": "Pet Food",
+        "price": 200,
+        "image": "https://s7d2.scene7.com/is/image/PetSmart/5258411",
+        "description": "Higgins Sunburst "
+    },
+    {
+        "id": 12,
+        "name": "Salt",
+        "category": "Groceries",
+        "price": 10,
+        "image": "https://nyvapeplus.com/wp-content/uploads/2022/06/SAFE-CAN-MORTON-SALT_SAFE-STORAGE-STASH_38960_9-1.jpeg",
+        "description": "Salt"
+    }
+]

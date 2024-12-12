@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        .product-card {
+            transition: transform 0.3s ease;
+        }   
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .product-image {
+            height: 250px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/products/">
+                <img src="/img/logo.png" alt="Logo" width="70px" height="30px" class="d-inline-block align-text-top me-2">
+                <!-- MyShop -->
+            </a>
+            <div class="navbar-nav ms-auto">
+                <!-- <a class="nav-link" href="/products/">Explore</a> -->
+                <a class="nav-link cart-badge" href="/cart/">Cart 
+                    <span id="cartCounter" class="badge bg-primary"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Product Catalog</h2>
+        
+        <!-- filter and search bar -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <select id="categoryFilter" class="form-select">
+                    <option value="">All Categories</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Clothing">Clothing</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Household">Household</option>
+                        <option value="Software">Software</option>
+                        <option value="Pet Food">Pet Food</option>
+                        <option value="Books">Books</option>
+                        <option value="Paramacy">Paramacy</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="priceFilter" class="form-select">
+                    <option value="">Price Range</option>
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                </select>
+            </div>
+            <div class="col"></div>
+            <div class="col-md-3">
+                <input type="text" id="searchBar" class="form-control" placeholder="Search products...">
+            </div>
+        </div>
+
+        <!-- grid for product -->
+        <div class="row" id="productList"></div>
+    </div>
+
+    <script>
+        // manage products and cart
+        class ProductManager {
+            constructor() {
+                this.cart = JSON.parse(localStorage.getItem('cart')) || [];
+                this.products = [];
+            }
+
+            // get products from product.json
+            async fetchProducts() {
+                try {
+                    const response = await fetch('/get-products/');
+                    this.products = await response.json();
+                    this.displayProducts(this.products);
+                    this.cartcounter();
+                } catch (error) {
+                    console.error("Failed to load products:", error);
+                }
+            }
+
+            // product view
+            displayProducts(productsToShow) {
+                const productList = document.getElementById("productList");
+                productList.innerHTML = productsToShow.map(product => `
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card">
+                            <img src="${product.image}" class="card-img-top product-image" alt="${product.name}">
+                            <div class="card-body">
+                                <hr>
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text text-muted">${product.description}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">$${product.price}</span>
+                                    <button class="btn btn-sm btn-primary" 
+                                        onclick="productManager.addToCart(${product.id}, '${product.name}', ${product.price}, '${product.image}')">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // adding products to cart
+            addToCart(productId, productName, productPrice, productImage) {
+                const existingProduct = this.cart.find(item => item.id === productId);
+                
+                if (existingProduct) {
+                    existingProduct.quantity++;
+                } else {
+                    this.cart.push({ 
+                        id: productId, 
+                        name: productName, 
+                        price: productPrice,
+                        image: productImage, 
+                        quantity: 1
+                    });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(this.cart));
+                this.cartcounter();
+                alert(`${productName} added to cart`);
+            }
+
+            // cart counter when product added to cart
+            cartcounter(){
+                const cartCounter = document.getElementById('cartCounter');
+                const totalItems = this.cart.reduce((total, item) => total + item.quantity, 0);
+
+                if (totalItems > 0){
+                    cartCounter.textContent = totalItems;
+                    cartCounter.style.display = 'inline-block';
+                }
+                else{
+                    cartCounter.textContent = '';
+                    cartCounter.style.display = 'none';
+                }
+            }
+
+            // filters for products
+            applyFilters() {
+                let filteredProducts = [...this.products];
+                const category = document.getElementById("categoryFilter").value;
+                const priceOrder = document.getElementById("priceFilter").value;
+                const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+
+                if (category) {
+                    filteredProducts = filteredProducts.filter(p => p.category === category);
+                }
+
+                if (priceOrder) {
+                    filteredProducts.sort((a, b) => 
+                        priceOrder === "low" ? a.price - b.price : b.price - a.price
+                    );
+                }
+
+                if (searchTerm) {
+                    filteredProducts = filteredProducts.filter(p => 
+                        p.name.toLowerCase().includes(searchTerm)
+                    );
+                }
+
+                this.displayProducts(filteredProducts);
+            }
+        }
+
+        const productManager = new ProductManager();
+
+        // filter events
+        document.addEventListener("DOMContentLoaded", () => {
+            productManager.fetchProducts();
+            
+            document.getElementById("categoryFilter").addEventListener("change", () => productManager.applyFilters());
+            document.getElementById("priceFilter").addEventListener("change", () => productManager.applyFilters());
+            document.getElementById("searchBar").addEventListener("input", () => productManager.applyFilters());
+        });
+    </script>
+</body>
+</html>
