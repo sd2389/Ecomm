@@ -4,7 +4,7 @@ Step1:
 
 - git clone https://github.com/sd2389/Ecomm.git
 
-- cd Ecomm
+- cd ecommerce
 
 Step2: 
 
